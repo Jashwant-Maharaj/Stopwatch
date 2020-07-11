@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <div class="mainHeader">
+        <h1>Stopwatch</h1>
+    </div>
+    <div class="main">
+        <div class="timer">
+            <div>
+                <h2 class="header">Timer</h2>
+            </div>
+            <div>
+                <h1 id="min">0</h1>
+                <h1>:</h1>
+                <h1 id="sec">0</h1>
+                <h1>:</h1>
+                <h1 id="msec">0</h1>
+            </div>
+            <div class="btn-row">
+                <div class="btn-inner-row">
+                    <button id="btnStart" class="btn" onclick="start()">Start</button>
+                    <button class="btn" onclick="stop()">Pause</button>
+                    <button class="btn" onclick="reset()">Reset</button>
+                </div>
+                <div class="btn-inner-row">
+                    <button class="btn" onclick="saveRecord()">Save Record</button>
+                </div>    
+            </div>
+        </div>
+        <div class="mainHistory">
+            <div>
+                <h2 class="header">History</h2>
+            </div>
+            <div id="history" class="history">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyrights &copy; 2020 - Jashwant Maharaj</p>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

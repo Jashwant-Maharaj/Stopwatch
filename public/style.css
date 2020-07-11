@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(61, 61, 61);
+    text-align: center;
+}
+h1{
+    width: 50px;
+    display: inline-block;
+    color: #ADEFD1;
+    font-size: 60px !important;
+}
+.history{
+    font-weight: bold;
+    color: #ADEFD1;
+    font-size: 30px;
+    height: 200px;
+    overflow: auto;
+}
+.mainHeader{
+    padding: 30px 0;
+    background-color: #ADEFD1;
+}
+.mainHeader h1{
+    width: auto;
+    color: rgb(61, 61, 61);
+}
+.header{
+    font-size: 50px;
+    color: #ADEFD1;
+    padding: 30px 0;
+}
+.btn-row{
+    padding-top: 40px;
+}
+.btn-inner-row{
+    padding: 5px 0;
+}
+.btn{
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #ADEFD1;
+    color: rgb(22, 22, 22);
+    border: none;
+    border-radius: 10px;
+    margin: 0 2px;
+}
+.btn:hover{
+    background-color: #d3f1e4;
+}
+.btn:visited{
+    border: none;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 550px){
+    .timer ,.mainHistory{
+        width: 100%;
+    }
+    .mainHistory{
+        padding-bottom: 90px;
+    }
+    .mainHeader{
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    padding: 15px 0;
+    color: rgb(34, 34, 34);
+    background-color: #ADEFD1;
+}
